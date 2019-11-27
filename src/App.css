@@ -20,3 +20,27 @@
 .App-link {
   color: #09d3ac;
 }
+
+.sort-button{
+  margin: 1em 10em;
+  align-self: flex-end;
+}
+
+.array{
+  display: flex;
+  flex: 1;
+  height: 50vh;
+  align-items: flex-end;
+}
+
+.array-value{
+  width: 100%;
+}
+
+.array-container{
+  height: 75vh;
+}
+
+.values-slider{
+  width: 25vw;
+}

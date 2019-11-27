@@ -5,11 +5,11 @@ import './App.css';
 
 class App extends React.Component {
   state = {
-    sortType: null,
+    sortType: "bubble",
     array: []
   }
 
-  componentWillMount(){
+  componentDidMount(){
     this.generateArrayVals(10)
   }
 
