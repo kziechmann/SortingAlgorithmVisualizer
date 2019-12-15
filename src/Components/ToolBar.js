@@ -1,12 +1,20 @@
 import React from 'react';
 
-const ToolBar = ({selectSortType, generateArrayVals}) =>{
+const ToolBar = ({selectSortType, generateArrayVals, sort, reset}) =>{
 
     return (
         <nav className="nav-extended  light-blue darken-4">
             <div className="nav-wrapper center">
-                <button className="btn left sort-button"> Sort </button>
-                <a href="#!" className="brand-logo center"><i className="material-icons">sort</i>Sorting Algorithms Visualizer</a>
+                <div className="left buttons">
+                    <button onClick={sort} className="btn sort-button"> Sort </button>
+                    <button onClick={reset} className="btn reset-button red"> Reset </button>
+                </div>
+                <a href="#!" className="brand-logo center">
+                    <i className="material-icons">
+                        sort
+                    </i>
+                    Sorting Algorithms Visualizer
+                </a>
             </div>
             <div className="nav-content container row">
                 <ul className="hide-on-med-and-down col">
@@ -16,7 +24,7 @@ const ToolBar = ({selectSortType, generateArrayVals}) =>{
                     <li><a href="#!" onClick={()=>selectSortType("heap")}>Heap Sort</a></li>
                     <li><a href="#!" onClick={()=>selectSortType("merge")}>Merge Sort</a></li>
                 </ul>
-                <span class="col values-slider">
+                <span className="col values-slider">
                     <form action="#">
                         <input onChange={e=>generateArrayVals(e.target.value)} type="range" id="test5" min="2" max="1000" width="30px"/>
                     </form>
