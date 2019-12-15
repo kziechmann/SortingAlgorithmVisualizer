@@ -25,6 +25,7 @@ const ToolBar = ({selectSortType, generateArrayVals, sort, reset}) =>{
                     <li><a href="#!" onClick={()=>selectSortType("merge")}>Merge Sort</a></li>
                 </ul>
                 <span className="col values-slider">
+                    Size of array:
                     <form action="#">
                         <input onChange={e=>generateArrayVals(e.target.value)} type="range" id="test5" min="2" max="1000" width="30px"/>
                     </form>

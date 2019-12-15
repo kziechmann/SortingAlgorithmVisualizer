@@ -1,7 +1,7 @@
 import React from 'react';
 import ToolBar from './Components/ToolBar'
 import Visualizer from './Components/Visualizer'
-import Algorithms from './Logic/SortAlgorithms'
+import Algorithms from './Logic/SortAlgorithmsIndex'
 
 import './App.css';
 
